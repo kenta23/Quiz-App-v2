@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scrollbar-width: thin;
+}
+.app {
+  background:linear-gradient(rgba(235, 231, 231, 0.5), rgba(71, 70, 70, 0.5)), url('bg.jpg') center no-repeat;
+  position: relative;
+  height: 150vh;
+}
+.footer-text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 480px) {
+    button {
+      font-size: 12px;
+    }
+}
+button:active {
+  border: none;
+  border: 2px solid rgb(63, 139, 63);
+  transform: scale(1.1);
+}
+.singleOption {
+  width: 46%;
+  height: auto;
+  padding: 15px 20px;
+  margin: 10px;
+  box-shadow: 0 0 2px black;
+}
+.select {
+  background-color: rgb(7, 207, 0);
+  color: white;
+  box-shadow: 0 0 2px black;
+}
+
+.wrong {
+  background-color: rgb(233, 0, 0);
+  color: white;
+  box-shadow: 0 0 2px black;
+}
+
+
